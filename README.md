@@ -24,12 +24,12 @@ git checkout -b feature/my-new-feature # 创建并切换到新分支
 ```
 git add ...
 git commit -m "完成某某功能"
-git push origin feature/my-feature
+git push origin develop
 ```
 
 6. 推送到main分支上（根据实际情况）
 
-···
+```
 git checkout main
 git pull origin main
 git merge develop
