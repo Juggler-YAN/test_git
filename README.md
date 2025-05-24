@@ -19,13 +19,29 @@ git checkout -b feature/my-new-feature # 创建并切换到新分支
 
 3. 开发
 
-4. 提交更改
+4. 推送到远程分支上（根据实际情况）
 
 ```
 git add ...
 git commit -m "完成某某功能"
+git push origin feature/my-feature
 ```
 
-5. 推送到远程分支上
+6. 推送到main分支上（根据实际情况）
 
+···
+git checkout main
+git pull origin main
+git merge develop
+git add ...
+git commit -m "完成某某功能"
+git push origin main
+```
+
+7. 删除自己的分支
+
+```
+git branch -d develop
+git push origin --delete develop
+```
 
